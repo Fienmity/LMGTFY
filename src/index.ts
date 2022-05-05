@@ -39,13 +39,24 @@ const LMGTFY: Plugin = {
 
         type: ApplicationCommandOptionType.String,
         required: true
+      },
+      {
+        name: "internetexplainer",
+        displayName: "internetexplainer",
+
+        description: "Whether or not to include internet explainer",
+        displayDescription: "Whether or not to include internet explainer",
+
+        type: ApplicationCommandOptionType.Boolean,
+        required: false
       }],
 
       execute: function (args, _) {
         const search = args[0].value;
+        const iie = args[1].value ?? false;
 
         return {
-          content: `<https://letmegooglethat.com/?q=${encodeURIComponent(search)}>`
+          content: `<https://lmgtfy.app/?q=${encodeURIComponent(search)}&iie=${+ iie}>`
         }
       }
     }
