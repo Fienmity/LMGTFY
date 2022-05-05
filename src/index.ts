@@ -40,7 +40,7 @@ const LMGTFY: Plugin = {
         type: ApplicationCommandOptionType.String,
         required: true
       }],
-      
+
       execute: function (args, _) {
         const search = args[0].value;
 
