@@ -5,7 +5,7 @@ const LMGTFY: Plugin = {
   name: "LMGTFY",
   // @ts-ignore
   author: 'Fiery',
-  version: '1.0.0',
+  version: '1.1.0',
   description: "Let me google that for you...",
   color: "#4285F4",
   authors: [
