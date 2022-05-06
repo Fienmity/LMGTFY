@@ -1,0 +1,12 @@
+{
+	"name": "LMGTFY",
+	"description": "Let me google that for you...",
+	"authors": [
+		{
+			"name": "Fiery",
+			"id": "890228870559698955"
+		}
+	],
+	"version": "1.2.0",
+	"color": "#4285F4"
+}

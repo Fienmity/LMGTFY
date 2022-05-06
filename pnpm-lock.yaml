@@ -1,7 +1,8 @@
-lockfileVersion: 5.4
+lockfileVersion: 5.3
 
 specifiers:
   '@rollup/plugin-commonjs': ^21.0.1
+  '@rollup/plugin-json': ^4.1.0
   '@rollup/plugin-node-resolve': ^13.1.1
   '@types/node': ^17.0.5
   '@typescript-eslint/eslint-plugin': ^5.8.1
@@ -27,14 +28,15 @@ optionalDependencies:
 
 devDependencies:
   '@rollup/plugin-commonjs': 21.1.0_rollup@2.72.0
+  '@rollup/plugin-json': 4.1.0_rollup@2.72.0
   '@rollup/plugin-node-resolve': 13.3.0_rollup@2.72.0
   '@types/node': 17.0.31
-  '@typescript-eslint/eslint-plugin': 5.22.0_as7czvxgrvaa35lzxztolpnp5a
+  '@typescript-eslint/eslint-plugin': 5.22.0_04be2cd6e68d400df579be66e5bdafe8
   '@typescript-eslint/parser': 5.22.0_eslint@8.14.0
   esbuild: 0.14.38
   eslint: 8.14.0
   rollup: 2.72.0
-  rollup-plugin-esbuild: 4.9.1_zdwxx76xd73ibjgz5r322rbegy
+  rollup-plugin-esbuild: 4.9.1_esbuild@0.14.38+rollup@2.72.0
 
 packages:
 
@@ -107,6 +109,15 @@ packages:
       rollup: 2.72.0
     dev: true
 
+  /@rollup/plugin-json/4.1.0_rollup@2.72.0:
+    resolution: {integrity: sha512-yfLbTdNS6amI/2OpmbiBoW12vngr5NW2jCJVZSBEz+H5KfUJZ2M7sDjk0U6GOOdCWFVScShte29o9NezJ53TPw==}
+    peerDependencies:
+      rollup: ^1.20.0 || ^2.0.0
+    dependencies:
+      '@rollup/pluginutils': 3.1.0_rollup@2.72.0
+      rollup: 2.72.0
+    dev: true
+
   /@rollup/plugin-node-resolve/13.3.0_rollup@2.72.0:
     resolution: {integrity: sha512-Lus8rbUo1eEcnS4yTFKLZrVumLPY+YayBdWXgFSHYhTT2iJbMhoaaBL3xl5NCdeRytErGr8tZ0L71BMRmnlwSw==}
     engines: {node: '>= 10.0.0'}
@@ -164,7 +175,7 @@ packages:
       '@types/node': 17.0.31
     dev: true
 
-  /@typescript-eslint/eslint-plugin/5.22.0_as7czvxgrvaa35lzxztolpnp5a:
+  /@typescript-eslint/eslint-plugin/5.22.0_04be2cd6e68d400df579be66e5bdafe8:
     resolution: {integrity: sha512-YCiy5PUzpAeOPGQ7VSGDEY2NeYUV1B0swde2e0HzokRsHBYjSdF6DZ51OuRZxVPHx0032lXGLvOMls91D8FXlg==}
     engines: {node: ^12.22.0 || ^14.17.0 || >=16.0.0}
     peerDependencies:
@@ -1142,7 +1153,7 @@ packages:
       glob: 7.2.0
     dev: true
 
-  /rollup-plugin-esbuild/4.9.1_zdwxx76xd73ibjgz5r322rbegy:
+  /rollup-plugin-esbuild/4.9.1_esbuild@0.14.38+rollup@2.72.0:
     resolution: {integrity: sha512-qn/x7Wz9p3Xnva99qcb+nopH0d2VJwVnsxJTGEg+Sh2Z3tqQl33MhOwzekVo1YTKgv+yAmosjcBRJygMfGrtLw==}
     engines: {node: '>=12'}
     peerDependencies:

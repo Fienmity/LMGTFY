@@ -1,19 +1,14 @@
 import { Plugin, registerPlugin } from "enmity-api/plugins";
 import { LMGTFYCommands } from "./commands";
+import Manifest from "./manifest.json";
 
 const LMGTFY: Plugin = {
-  name: "LMGTFY",
+  name: Manifest.name,
   // @ts-ignore
-  author: 'Fiery',
-  version: '1.2.0',
-  description: "Let me google that for you...",
-  color: "#4285F4",
-  authors: [
-    {
-      name: 'Fiery',
-      id: '890228870559698955'
-    }
-  ],
+  description: Manifest.description,
+  authors: Manifest.authors,
+  version: Manifest.version,
+  color: Manifest.color,
   commands: [],
 
   onStart() {
